@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Corporate Messenger UI
 
-# Run and deploy your AI Studio app
+Минималистичный современный корпоративный мессенджер.
 
-This contains everything you need to run your app locally.
+## Как запустить проект локально
 
-View your app in AI Studio: https://ai.studio/apps/9c398391-406e-40c1-b803-9c2f38db1565
+### Требования
+Убедитесь, что на вашем компьютере установлен [Node.js](https://nodejs.org/) (рекомендуется версия 18 и выше).
 
-## Run Locally
+### Установка и запуск
 
-**Prerequisites:**  Node.js
+1. **Перейдите в папку с проектом** (если вы скачали архив, сначала распакуйте его):
+   ```bash
+   cd <папка_с_проектом>
+   ```
 
+2. **Установите зависимости**:
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. **Запустите сервер разработки**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Откройте приложение**:
+   После запуска в терминале появится локальная ссылка (обычно `http://localhost:3000` или `http://localhost:5173`). Откройте её в браузере.
+
+### Сборка для продакшена (опционально)
+Чтобы собрать оптимизированную версию приложения для деплоя, выполните:
+```bash
+npm run build
+```
